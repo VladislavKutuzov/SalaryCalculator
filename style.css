@@ -1,8 +1,8 @@
 body {
-    background: #000;
+    background: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    padding-top: 100px;
+    padding-top: 50px;
     -ms-user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
@@ -12,10 +12,12 @@ body {
 #zp {
     width: 300px;
     padding: 10px;
-    font-size: 50px;
+    font-size: 60px;
     margin: 0 auto;
     color: rgb(45, 231, 45);
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    text-shadow: rgb(45, 231, 45) 1px 1px 10px;
+
 
 }
 
@@ -37,17 +39,53 @@ body {
 }
 
 .btn {
-    background: rgb(137, 4, 4);
-    width: 150px;
+    background: rgb(45, 231, 45);
+    width: 100px;
     font-size: 40px;
     position: relative;
     color: white;
     border-radius: 5px;
     padding: 5px 0px;
 
+
+}
+
+.red {
+    background: red;
 }
 
 .btn:active {
-    background: rgb(45, 231, 45);
+    background: rgb(250, 245, 245);
+}
+
+
+.history__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history__list div {
+    background: rgb(31, 31, 31);
+    padding: 6px 0;
+    border-bottom: 4px solid black;
+
+}
+
+.history__line {
+    background: rgb(31, 31, 31);
+    width: 100%;
+    padding: 5px 0;
+    color: rgb(45, 231, 45);
+    border-bottom: 4px solid black;
+
+}
+
+.red-text {
+    color: red;
+}
+
+.green-text {
+    color: rgb(45, 231, 45);
 }
 
