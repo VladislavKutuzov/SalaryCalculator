@@ -4,18 +4,16 @@ let sum;
 let historyLine = document.querySelector('.history__line');
 let history = document.querySelector('.history');
 let bool = true;
-let numberSum = 0;
-let number = 0
+let number = 0;
 
 
 
 function btnFiftyMinus() {
     number -= 50;
     text.innerHTML = number;
-    console.log( number)
-    console.log( text.innerHTML);
     console.log('-50');
     zp();
+
     history.innerHTML = '<div class="history__list"><div class="red-text">' + new Date().toLocaleTimeString() + '</div><div class="history__line red-text">-50</div></div>' + history.innerHTML;
     // console.log(now);
 }
@@ -25,6 +23,7 @@ function btnFifty() {
     text.innerHTML = number;
     zp();
     console.log('+50');
+
     history.innerHTML = '<div class="history__list"><div class="green-text">' + new Date().toLocaleTimeString() + '</div><div class="history__line">+50</div></div>' + history.innerHTML;
     console.log(now);
 
@@ -37,6 +36,7 @@ function btnHundred() {
     text.innerHTML = number;
     zp();
     console.log('+100');
+
     history.innerHTML = '<div class="history__list"><div class="green-text">' + new Date().toLocaleTimeString() + '</div><div class="history__line">+100</div></div>' + history.innerHTML;
     console.log(now);
 }
@@ -46,5 +46,6 @@ function zp() {
     zpDiv.innerText = sum;
     localStorage.setItem('zpDiv', zpDiv.innerText);
     localStorage.setItem('text', text.innerText);
-    return zpDiv;
+    localStorage.setItem('number', number);
+    return number;
 }
