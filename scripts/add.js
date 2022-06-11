@@ -3,29 +3,29 @@ let zpDiv = document.getElementById('zp');
 let sum;
 let historyLine = document.querySelector('.history__line');
 let history = document.querySelector('.history');
-let now = new Date().toLocaleTimeString();
 let bool = true;
-text.innerHTML = 0;
+let numberSum = 0;
+let number = 0
 
 
 
 function btnFiftyMinus() {
-    let number = Number(text.innerHTML) - 50;
+    number -= 50;
     text.innerHTML = number;
     console.log( number)
     console.log( text.innerHTML);
     console.log('-50');
     zp();
-    history.innerHTML = '<div class="history__list"><div class="red-text">' + now + '</div><div class="history__line red-text">-50</div></div>' + history.innerHTML;
+    history.innerHTML = '<div class="history__list"><div class="red-text">' + new Date().toLocaleTimeString() + '</div><div class="history__line red-text">-50</div></div>' + history.innerHTML;
     // console.log(now);
 }
 
 function btnFifty() {
-    let number = Number(text.innerHTML) + 50;
+    number += 50;
     text.innerHTML = number;
     zp();
     console.log('+50');
-    history.innerHTML = '<div class="history__list"><div class="green-text">' + now + '</div><div class="history__line">+50</div></div>' + history.innerHTML;
+    history.innerHTML = '<div class="history__list"><div class="green-text">' + new Date().toLocaleTimeString() + '</div><div class="history__line">+50</div></div>' + history.innerHTML;
     console.log(now);
 
 
@@ -33,11 +33,11 @@ function btnFifty() {
 
 
 function btnHundred() {
-    let number = Number(text.innerHTML) + 100;
+    number += 100;
     text.innerHTML = number;
     zp();
     console.log('+100');
-    history.innerHTML = '<div class="history__list"><div class="green-text">' + now + '</div><div class="history__line">+100</div></div>' + history.innerHTML;
+    history.innerHTML = '<div class="history__list"><div class="green-text">' + new Date().toLocaleTimeString() + '</div><div class="history__line">+100</div></div>' + history.innerHTML;
     console.log(now);
 }
 
