@@ -1,10 +1,11 @@
-let text = document.getElementById('text');
-let zpDiv = document.getElementById('zp');
+const text = document.getElementById('text');
+const zpDiv = document.getElementById('zp');
 let sum;
 let historyLine = document.querySelector('.history__line');
-let history = document.querySelector('.history');
+const history = document.querySelector('.history');
 let bool = true;
 let number = 0;
+
 
 
 
@@ -15,7 +16,7 @@ function btnFiftyMinus() {
     zp();
 
     history.innerHTML = '<div class="history__list"><div class="red-text">' + new Date().toLocaleTimeString() + '</div><div class="history__line red-text">-50</div></div>' + history.innerHTML;
-    // console.log(now);
+
 }
 
 function btnFifty() {
@@ -25,7 +26,7 @@ function btnFifty() {
     console.log('+50');
 
     history.innerHTML = '<div class="history__list"><div class="green-text">' + new Date().toLocaleTimeString() + '</div><div class="history__line">+50</div></div>' + history.innerHTML;
-    console.log(now);
+
 
 
 }
@@ -38,7 +39,7 @@ function btnHundred() {
     console.log('+100');
 
     history.innerHTML = '<div class="history__list"><div class="green-text">' + new Date().toLocaleTimeString() + '</div><div class="history__line">+100</div></div>' + history.innerHTML;
-    console.log(now);
+
 }
 
 function zp() {
@@ -47,5 +48,22 @@ function zp() {
     localStorage.setItem('zpDiv', zpDiv.innerText);
     localStorage.setItem('text', text.innerText);
     localStorage.setItem('number', number);
+    localStorage.setItem('history', history.innerHTML);
     return number;
 }
+
+
+
+
+
+
+
+
+
+/* // Сброс значения если уже новый день
+let data = new Date().setHours(18,47);
+// const newData =  new Date().setHours(18,47)
+console.log(data);
+if (data = newData ) {
+    localStorage.clear();
+} */

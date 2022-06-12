@@ -13,18 +13,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="content">
+        <div id="zp"></div>
+        <div id="text"></div>
+        <div class="block__btn">
+            <div class="btn red" onclick="btnFiftyMinus()">-50</div>
+            <div class="btn" onclick="btnFifty()">+50</div>
+            <div class="btn" onclick="btnHundred()">+100</div>
+        </div>
 
-    <div id="zp"></div>
-    <div id="text"></div>
-    <div class="block__btn">
-        <div class="btn red" onclick="btnFiftyMinus()">-50</div>
-        <div class="btn" onclick="btnFifty()">+50</div>
-        <div class="btn" onclick="btnHundred()">+100</div>
+        <div class="history">
+
+        </div>
     </div>
+    <p class="error">Пожалуйста откроойте странице на мобильном устройстве ;)</p>
 
-    <div class="history">
-
-    </div>
 
     <script src="scripts/add.js"></script>
     <script src="scripts/autosave.js"></script>
