@@ -6,30 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Татуха Муха</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Content -->
     <div class="content">
+        <!-- Зарплата -->
         <div id="zp"></div>
+        <!-- Сумма -->
         <div id="text"></div>
+        <!-- Кнопки взаимодействия -->
         <div class="block__btn">
             <div class="btn red" onclick="btnFiftyMinus()">-50</div>
             <div class="btn" onclick="btnFifty()">+50</div>
             <div class="btn" onclick="btnHundred()">+100</div>
         </div>
-
-        <div class="history">
-
-        </div>
+        <!-- История расчета -->
+        <div class="history"></div>
     </div>
+    <!-- /content -->
+
+    <!-- Error -->
     <p class="error">Пожалуйста откройте страницу на мобильном устройстве ;)</p>
 
 
     <script src="scripts/add.js"></script>
-    <script src="scripts/autosave.js"></script>
 </body>
 </html>
