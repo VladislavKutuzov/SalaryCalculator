@@ -14,13 +14,13 @@ function btnFiftyMinus() {  // Расчет -50
 
     // добавление истории расчета
     history.innerHTML =
-    `<div class="history">
-        <div class="history__list">
-            <div class="red-text">` + new Date().toLocaleTimeString() + `</div>
-            <div class="history__line red-text">-50</div>
-            <div class="history__sum red-text">` + cloneText.innerText + `</div>
-        </div>
-    </div>`
+    `
+    <div class="history__list">
+        <div class="red-text">` + new Date().toLocaleTimeString() + `</div>
+        <div class="history__line red-text">-50</div>
+        <div class="history__sum red-text">` + cloneText.innerText + `</div>
+    </div>
+    `
      + history.innerHTML;
     zp();
 }
@@ -33,13 +33,13 @@ function btnFifty() {  // Расчет +50
 
     // добавление истории расчета
     history.innerHTML =
-    `<div class="history">
-        <div class="history__list">
-            <div class="green-text">` + new Date().toLocaleTimeString() + `</div>
-            <div class="history__line">+50</div>
-            <div class="history__sum green-text">` + cloneText.innerText + `</div>
-        </div>
-    </div>`
+    `
+    <div class="history__list">
+        <div class="green-text">` + new Date().toLocaleTimeString() + `</div>
+        <div class="history__line">+50</div>
+        <div class="history__sum green-text">` + cloneText.innerText + `</div>
+    </div>
+    `
      + history.innerHTML;
     zp();
 }
@@ -52,13 +52,13 @@ function btnHundred() {  // Расчет +100
 
     // добавление истории расчета
     history.innerHTML =
-    `<div class="history">
-        <div class="history__list">
-            <div class="green-text">` + new Date().toLocaleTimeString() + `</div>
-            <div class="history__line">+100</div>
-            <div class="history__sum green-text">` + cloneText.innerText + `</div>
-        </div>
-    </div>`
+    `
+    <div class="history__list">
+        <div class="green-text">` + new Date().toLocaleTimeString() + `</div>
+        <div class="history__line">+100</div>
+        <div class="history__sum green-text">` + cloneText.innerText + `</div>
+    </div>
+    `
      + history.innerHTML;
     zp();
 }

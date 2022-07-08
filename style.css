@@ -60,18 +60,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    width: 320px;
 }
 
 .history__list div {
     padding: 6px 0;
-    border-bottom: 4px solid black;
+
 }
 
 .history__line {
     width: 100%;
     padding: 5px 0;
     color: rgb(45, 231, 45);
-    border-bottom: 4px solid black;
+
 }
 
 .red-text {
