@@ -63,13 +63,11 @@ body {
 }
 
 .history__list div {
-    background: rgb(31, 31, 31);
     padding: 6px 0;
     border-bottom: 4px solid black;
 }
 
 .history__line {
-    background: rgb(31, 31, 31);
     width: 100%;
     padding: 5px 0;
     color: rgb(45, 231, 45);
