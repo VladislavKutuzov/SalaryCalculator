@@ -77,13 +77,8 @@ function zp() { // Расчет зп от 30% дохода
 }
 
 function fday() {
-    let znach = alert();
-
-    if (znach) {
-        localStorage.clear();
-        window.onload();
-    }
-
+    localStorage.clear();
+    window.onload();
 }
 
 
