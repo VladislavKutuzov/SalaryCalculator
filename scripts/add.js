@@ -63,8 +63,6 @@ function btnHundred() {  // Расчет +100
     zp();
 }
 
-let day = new Date().getDay();
-
 function zp() { // Расчет зп от 30% дохода
     sum = text.innerText * 0.3;
     zpDiv.innerText = sum;
@@ -75,14 +73,17 @@ function zp() { // Расчет зп от 30% дохода
     localStorage.setItem('number', number);
     localStorage.setItem('history', history.innerHTML);
     localStorage.setItem('historySum', cloneText.innerText);
-    localStorage.setItem('day', day);
     return number;
 }
 
 function fday() {
-    if (new Date().getDay() != +day) {
+    let znach = alert();
+
+    if (znach) {
         localStorage.clear();
+        window.onload();
     }
+
 }
 
 
@@ -97,6 +98,5 @@ window.onload = () => { // Используем значения для авто
     history.innerHTML = rawHistory;
     number = Number(rawNumber);
     cloneText.innerText = rawHistorySum;
-    fday()
 }
 

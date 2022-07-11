@@ -84,6 +84,21 @@ body {
     color: rgb(45, 231, 45);
 }
 
+.new__day {
+    background: red;
+    width: 320px;
+    font-size: 20px;
+    position: relative;
+    color: white;
+    border-radius: 5px;
+    padding: 20px 0px;
+    margin: 40px auto;
+}
+
+.new__day:active {
+    background: #fff;
+}
+
 @media (min-width: 768px) {
     body {
         height: 100vh;
