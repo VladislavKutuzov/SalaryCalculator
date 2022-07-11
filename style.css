@@ -62,11 +62,15 @@ body {
     align-items: center;
     margin: 0 auto;
     width: 320px;
+    padding: 5px 10px;
+}
+
+.history__list:nth-child(odd) {
+    background: rgb(30, 30, 30);
 }
 
 .history__list div {
     padding: 6px 0;
-
 }
 
 .history__line {
